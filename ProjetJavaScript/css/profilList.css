@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family:Century Gothic;
+}
+body .Container{
+  width: calc(100% - 100px);
+  height:2000px;
+  max-width: 1060px;
+    margin-left: auto;
+    border: 1px solid black;
+    display: block;
+
+}
+.Container ul{
+list-style: none;
+ display:flex;
+ justify-content: space-between;
+}
+.vueducontainer{
+  width: 25%;
+ height: 380px;
+ border-radius: 20px;
+ padding-left: 10px;
+ padding-right: 10px;
+ margin-bottom: 50px;
+ transition: 0.7s;
+}
+.vueducontainer:hover{
+  transform: scale(1.2);
+  background: #F0F0F0;
+}
+.vueducontainer img{
+  border-radius: 20px;
+  height: 240px;
+  width: 100%;
+  margin-top: 7px;
+}
+.vueducontainer .Name{
+  width: 100%;
+  font-family:Century Gothic;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+  margin-bottom: 4px;
+}
+.ImageSide{
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+
+}
+
+.Name p{
+  /*text-align:center;*/
+  font-size: 30px;
+  font-weight: bolder;
+
+}
+.Description p{
+  margin-left: 10px;
+font-weight: bolder;
+color: rgb(68, 68, 68);
+}
+.Description p:hover{
+  color: #1A73E8;
+}
