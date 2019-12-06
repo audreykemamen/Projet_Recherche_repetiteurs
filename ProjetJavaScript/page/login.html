@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/logCss.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div id="header">
+    <h1></strong>LearnIN</strong></h1>
+		  <input type="checkbox" id="chk">
+		 <label for="chk" id="affiche-menu-btn">
+		  <i class="fas fa-ellipsis-h"></i>
+		  </label>
+		  <ul id="menu">
+		  <a href="#"><strong>S'inscrire</strong></a>
+		  <a href="#"><strong>Se connecter</strong></a>
+		  <a href="#"><strong>Aide</strong></a>
+		  <a href="#" class="RoundActive"><strong>Donner des cours</strong></a>
+      <label for="chk" id="cacher-menu-btn">
+ 		  <i class="fas fa-times"></i>
+		  </ul>
+  </div>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="btns" onclick="login()">Log In</button>
+            <button type="button" class="btns" onclick="register()">Register</button>
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="text1" placeholder="N° Telephone" required>
+            <input type="text" class="text1" placeholder="Mot de passe" required>
+            <input type="checkbox" class="chech-box"><span>Remember me</span>
+            <a href="../index.html"><input type="button" class="btn-valid" value="Register"></a>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="text1" placeholder="Name" required>
+            <input type="text" class="text1" placeholder="Nickname" required>
+            <input type="text" class="text1" placeholder="Phone" required>
+            <input type="text" class="text1" placeholder="Password" required>
+            <input type="text" class="text1" placeholder="Password Confirm" required>
+            <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+
+            <a href="../index.html"><input type="button" class="btn-valid" value="Register"></a>
+        </form>
+
+        <div class="social-icons">
+            <img src="../img/facebook_48px.png" alt="">
+            <img src="../img/twitter_48px.png" alt="">
+            <img src="../img/google_plus_squared_48px.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-600px"
+            y.style.left = "120px"
+            z.style.left = "119px"
+        }
+
+        function login() {
+            x.style.left = "100px"
+            y.style.left = "800px"
+            z.style.left = "0"
+        }
+    </script>
+
+</body>
+
+</html>
